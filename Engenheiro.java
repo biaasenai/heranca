@@ -1,0 +1,26 @@
+package Atividade3;
+
+public class Engenheiro extends Funcionario {
+	
+	private int numCrea;
+	
+	public Engenheiro(String nome, String matricula, double salario, String telefone, String endereco, String dataNascimento, int numCrea) {
+		super(nome, matricula, salario, telefone, endereco, dataNascimento);
+		this.numCrea = numCrea;
+	}
+
+	public int getNumCrea() {
+		return numCrea;
+	}
+
+	public void setNumCrea(int numCrea) {
+		this.numCrea = numCrea;
+	}
+
+	@Override
+	 public String toString() {
+		return super.toString() + "\nNumCrea: " + numCrea;
+	}
+
+	
+}
